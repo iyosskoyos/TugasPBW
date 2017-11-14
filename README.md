@@ -1,2 +1,2 @@
 # TugasPBW
-Membuat atau meniru IDE unpar, pada website ide.unpar.ac.id
+Membuat IDE unpar seperti pada website ide.unpar.ac.id 
