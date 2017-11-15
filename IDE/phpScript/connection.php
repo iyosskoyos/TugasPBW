@@ -1,7 +1,7 @@
 <?php
-    $conn = new mysqli("localhost", "root", "", "ide");
+    $mysqli = new mysqli("localhost", "root", "", "ide");
 
-    if($conn->connect_errno){
+    if($mysqli->connect_errno){
         echo "Failed to connect.";
     }
 ?>

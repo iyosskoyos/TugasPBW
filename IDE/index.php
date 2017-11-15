@@ -33,7 +33,7 @@ include 'layout/style.php';
 	<!-- Modal -->
 	<div id="id01" class="modal">
 
-		<form class="modal-content animate" action="phpScript/login.php" style="width: 50%">
+		<form class="modal-content animate" action="phpScript/login.php" method= "post" style="width: 50%">
 
 			<div class="imgcontainer" style="width: 99%;display: inline-block;">
 				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -42,7 +42,7 @@ include 'layout/style.php';
 
 			<div class="container">
 				<label><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="uname" required>
+				<input type="text" placeholder="Enter Username" name="username" required>
 
 				<label><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" required>
