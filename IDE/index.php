@@ -32,7 +32,6 @@ include 'layout/style.php';
 
 	<!-- Modal -->
 	<div id="id01" class="modal">
-		<br> <br>
 		<form class="modal-content animate" action="phpScript/login.php" method= "post" style="width: 50%">
 
 			<div class="imgcontainer" style="width: 99%;display: inline-block;">
