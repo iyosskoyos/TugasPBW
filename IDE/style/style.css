@@ -141,3 +141,7 @@ span.psw {
        width: 100%;
     }
 }
+
+#leftnav{
+  cursor: pointer;
+}
