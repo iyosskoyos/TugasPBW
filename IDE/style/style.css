@@ -145,3 +145,7 @@ span.psw {
 #leftnav{
   cursor: pointer;
 }
+
+.error{
+  color: #FF0000;
+}
