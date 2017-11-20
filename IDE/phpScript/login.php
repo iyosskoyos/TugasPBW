@@ -11,11 +11,9 @@ else{
 	$username = test_input($_POST['username']);
 	$password = test_input($_POST['psw']);
 	$sql = "SELECT username FROM users WHERE username = '$username'";
-	
-
 	$result = $mysqli->query($sql);
-
-	if($result && $result->num_rows > 0){
+if($result && $result->num_rows > 0){
+	
 		$sql = "SELECT username, pass FROM users WHERE username = '$username' AND pass= '$password'";
 		$result = $mysqli->query($sql);
 
@@ -35,6 +33,8 @@ else{
 				$_SESSION['pass'] = $row['pass'];
 				$_SESSION['userid'] = $row['userid'];
 				$_SESSION['name'] = $row['name'];
+				$cookie_value = $_SESSION['username'];
+				setcookie('username', $cookie_value, time() + (86400 * 30), "/");
 
 				if($_SESSION['position'] == 'student'){
 					header("Location: ../pages/student/std.php");

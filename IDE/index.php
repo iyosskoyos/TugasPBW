@@ -1,6 +1,14 @@
 <?php 
 include 'phpScript/connection.php';
+include 'phpScript/startSession.php';
 include 'layout/style.php';
+
+if(isset($_COOKIE["username"])){
+	$cookie = $_COOKIE["username"];
+}
+else{
+	$cookie = "";
+}
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +49,7 @@ include 'layout/style.php';
 
 			<div class="container">
 				<label><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="username" required>
+				<input type="text" placeholder="Enter Username" name="username" required value="<?php echo $cookie ?>">
 
 				<label><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" required>
