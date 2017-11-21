@@ -16,8 +16,14 @@ include '../../phpScript/startSession.php';
 </head>
 <body>
 	<?php 
+	$myCourses = false;
 	include('../../layout/header.php');
-	include('../../layout/sidebar.php');
 	?>
+	<div class="w3-main">
+		<?php include('../../layout/sidebar.php'); ?>
+		<div class="w3-container" style="width: 75%; float: right;">
+			<?php include('../../phpScript/courses.php'); ?>
+		</div>
+	</div>
 </body>
 </html>
