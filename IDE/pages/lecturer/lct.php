@@ -22,7 +22,8 @@ include '../../phpScript/startSession.php';
 	<div class="w3-main">
 		<!-- include sidebar -->
 		<?php include ('../../layout/sidebar.php');?>
-		<div class="w3-container" style="width: 75%; float: right;">
+		<div class="w3-container" style="width: 75%; position: absolute; left: 250px">
+			<!-- include courses -->
 			<?php include ('../../phpScript/courses.php'); ?>
 		</div>
 	</div>
