@@ -34,12 +34,12 @@ include('../../phpScript/startSession.php');
 						<header class="w3-container">
 							<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
 
-							<H3>SELECT ACTIVITY</H3><BR>
+							<H3 style= "color: black">SELECT ACTIVITY</H3><BR>
 						</header>
 						<div class="w3-container">
-							<input type="radio" name="activity" value="Assignment" > <a class = "fa fa-file-text-o "> Assignment</a>
+							<input type="radio" name="activity" value="Assignment" > <a class = "fa fa-file-text-o " style="margin: 10px"> Assignment</a>
 							<br>
-							<input type="radio" name="activity" value="File" > <a class = "fa fa-file-o "> File </a>
+							<input type="radio" name="activity" value="File" > <a class = "fa fa-file-o " style="margin: 10px"> File </a>
 						</div>
 						<footer class="w3-container">
 							<br>
