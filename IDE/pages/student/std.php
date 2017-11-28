@@ -1,28 +1,35 @@
-<?php 
-include '../../phpScript/connection.php';
-include '../../phpScript/startSession.php';
-?>
- 
+<!-- include connection -->
+<?php include('../../phpScript/connection.php'); 
+include('../../phpScript/startSession.php');
+if(isset($_SESSION['id'])){
 
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>course</title>
-	<link rel="stylesheet" type="text/css" href="../../lib/w3.css">
-	<link rel="stylesheet" href="../../lib/w3-theme-dark-grey.css">
-	<link rel="stylesheet" href="../../lib/font-awesome.min.css">
+	<title>IDE</title>
+	<!-- include style -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../lib/w3.css">
 	<link rel="stylesheet" href="../../lib/font-awesome.css">
 	<link rel="stylesheet" href="../../style/style.css">
+	<link rel="stylesheet" href="../../lib/w3-theme-dark-grey.css">
 </head>
+
 <body>
-	<?php 
-	$myCourses = false;
-	include('../../layout/header.php');
-	?>
+	<?php $myCourses = false ?>
+	<!-- include header -->
+	<?php include ('../../layout/header.php');?>
 	<div class="w3-main">
-		<?php include('../../layout/sidebar.php'); ?>
+		<!-- include sidebar -->
+		<?php include ('../../layout/sidebar.php');?>
 		<div class="w3-container" style="width: 75%; float: right;">
-			<?php include('../../phpScript/courses.php'); ?>
+			<?php include ('../../phpScript/courses.php'); 
+}
+else{
+	header("location:../../index.php");
+}
+			?>
 		</div>
 	</div>
 </body>

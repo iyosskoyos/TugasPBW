@@ -20,4 +20,7 @@ if($result && $result->num_rows > 0){
 <?php
 	}
 }
+else{
+	header("location:../../index.php");
+}
 ?>
