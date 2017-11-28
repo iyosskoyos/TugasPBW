@@ -54,7 +54,7 @@ include('../../phpScript/startSession.php');
 						</button>
 					</legend>
 					<div class="w3-hide w3-container w3-margin-top" id="con">
-					<text>Select File</text>
+					<?php include ('../../phpScript/uploadActivity.php');?>
 					</div>
 				</fieldset>
 			</div>
