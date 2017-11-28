@@ -23,7 +23,7 @@ if(isset($_SESSION['id'])){
 	<div class="w3-main">
 		<!-- include sidebar -->
 		<?php include ('../../layout/sidebar.php');?>
-		<div class="w3-container" style="width: 75%; float: right;">
+		<div class="w3-container" style="width: 75%; float: right; position: absolute; left: 250px">
 			<?php include ('../../phpScript/courses.php'); 
 }
 else{
