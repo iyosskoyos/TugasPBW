@@ -37,7 +37,7 @@ if ($link == 'student') {
             <text style="font-size:20px;">MY PROFILE</text>
         </a><br>
 
-        <a href="../../index.php" ><i  class = "fa fa-power-off " style="font-size:28px;margin-right:20px ;margin-top:17px;"></i>
+        <a href="../../phpScript/logout.php" ><i  class = "fa fa-power-off " style="font-size:28px;margin-right:20px ;margin-top:17px;"></i>
             <text style="font-size:20px;">LOG OUT</text>
         </a><br>
 
