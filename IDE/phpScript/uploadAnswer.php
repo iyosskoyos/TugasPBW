@@ -32,11 +32,13 @@ if($attachment != ""){
 		$sqlInputActivity = "INSERT INTO submissions (`ID_A`, `ID_U`, `fileDirectory`) VALUES ('$ida','$id', '$path')";
 		$mysqli->query($sqlInputActivity);
 		echo "Berhasil di upload";
+
 	}
 	
 }
 else{
 	echo "Gagal";
 }
+header("Location: ../pages/student/std.php");
 ?>
 
