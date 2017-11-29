@@ -19,6 +19,7 @@ if($result && $result->num_rows > 0){
 					$description = $rowKontenTopik["description"];
 					$dir = $rowKontenTopik["dir"];
 					$acc = $rowKontenTopik["tipeFile"];
+					$_SESSION['id_course']  = $id;
 					$_SESSION['ida'] = $rowKontenTopik["ida"];
 					
 					if($dir != ""){
