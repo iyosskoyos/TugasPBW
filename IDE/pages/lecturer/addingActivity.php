@@ -56,7 +56,7 @@ if(isset($_SESSION['id'])){
 						<div class="w3-hide w3-container w3-margin-top" id="gen">
 							<div style="width:100%;height:60px">
 								<text class="w3-text-red w3-left " style="margin-left:60px;">Name *</text>
-								<input id="name-box" name="name" class="w3-input w3-border w3-border-theme value w3-left" type="text" style="width:800px;margin-left:100px;height:30px;" >
+								<input id="name-box" name="name" class="w3-input w3-border w3-border-theme value w3-left" type="text" style="width:800px;margin-left:70px;height:30px;" >
 							</div>
 							<div style="margin-top:10px;padding:0px;height:100px;">
 								<text class="w3-left " style="margin-left:60px;">Description</text>
@@ -75,10 +75,18 @@ if(isset($_SESSION['id'])){
 								</button>
 							</legend>
 							<div class="w3-hide w3-container w3-margin-top" id="avail">
-								Allow submissions from <i class="fa fa fa-question-circle"></i> <input id="startDateHTML" type="date" name="startDate" disabled> <input type="checkbox" onchange="document.getElementById('startDateHTML').disabled = !this.checked;">Enable
+								Allow submissions from <i class="fa fa fa-question-circle"></i> 
+								<div>
+									<input id="startDateHTML" type="date" name="startDate" disabled> <input type="checkbox" onchange="document.getElementById('startDateHTML').disabled = !this.checked;">Enable
+								</div>
+								
 								<br>
 								<br>
-								Due Date <i class="fa fa fa-question-circle"></i> <input type="date" name="endDate" id="endDateHTML" disabled=""> <input type="checkbox" onchange="document.getElementById('endDateHTML').disabled = !this.checked;"> Enable
+								Due Date <i class="fa fa fa-question-circle"></i> 
+								<div>
+									<input type="date" name="endDate" id="endDateHTML" disabled=""> <input type="checkbox" onchange="document.getElementById('endDateHTML').disabled = !this.checked;"> Enable
+								</div>
+								
 								<br>
 							</div>
 						</fieldset>

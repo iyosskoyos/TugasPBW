@@ -81,7 +81,7 @@ if($result && $result->num_rows > 0){
 					<p><button onclick="document.getElementById('modal<?php echo "$idTopic"; ?>').style.display='block'" class='w3-button w3-grey w3-large'>Add Activity</button></p>
 					<!--MODAL-->
 					<div id="modal<?php echo $idTopic; ?>" class="w3-modal">
-						<div class="w3-modal-content" style="width:550px;height:250px;"> 
+						<div class="w3-modal-content" style="width:550px;height:350px;"> 
 							<header class="w3-container">
 								<span onclick="document.getElementById('modal<?php echo "$idTopic"; ?>').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
 
@@ -97,7 +97,7 @@ if($result && $result->num_rows > 0){
 									<input type="text" name="id_topik" value="<?php echo "$idTopic";?>" hidden>
 									<input type="text" name="id_course" value="<?php echo "$id";?>" hidden>
 									<br>
-									<button type="submit" class="w3-large w3-black w3-btn">ADD</button>
+									<button type="submit" class="w3-large w3-black w3-btn" style="position: absolute; left: 250px;margin-top: 10px">ADD</button>
 								</form>
 
 							</div>

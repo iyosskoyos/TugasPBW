@@ -21,7 +21,7 @@ include('../../phpScript/startSession.php');
 	<div class="w3-main">
 		<!-- include sidebar -->
 		<?php include ('../../layout/sidebar.php');?>
-		<div class="w3-container" style="width: 75%; float: right;">
+		<div class="w3-container" style="width: 75%; float: right;position: absolute; left: 250px">
 			<div class="w3-panel w3-card-2 w3-grey"><p><?php
 			echo $_GET["courseTitle"];
 			?></p></div>

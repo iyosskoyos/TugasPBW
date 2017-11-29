@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2017 at 04:55 PM
+-- Generation Time: Nov 28, 2017 at 07:08 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -46,19 +46,10 @@ CREATE TABLE `activities` (
 --
 
 INSERT INTO `activities` (`ID_A`, `ID_AT`, `ID_C`, `dateOpen`, `dateClose`, `submissions`, `title`, `ID_topic`, `fileDir`, `description`) VALUES
-(1, 1, 2, NULL, NULL, NULL, 'Test 1', 1, NULL, ''),
-(2, 2, 2, NULL, NULL, NULL, 'Test 2', 1, NULL, ''),
-(3, 2, 2, NULL, NULL, NULL, 'Test 3', 2, NULL, ''),
 (11, 2, 1, NULL, NULL, NULL, 'Coba', 1, '../upload/file/AIF315/23.jpg', ''),
 (12, 2, 2, NULL, NULL, NULL, 'Coba', 1, '../upload/file/AIF101/23.jpg', 'Test Upload'),
 (13, 2, 2, NULL, NULL, NULL, 'Test Upload', 1, '../upload/file/AIF101/144563.jpg', 'Test Upload'),
-(16, 2, 2, NULL, NULL, NULL, 'Zip', 1, '../upload/file/AIF101/fabricated-city_indonesian-1526113.zip', ''),
-(17, 1, 2, '2017-01-01', '2017-01-02', NULL, 'Test Assign', 1, NULL, 'Test'),
-(18, 1, 2, '2017-01-01', '2017-01-02', NULL, 'Test Assign', 1, NULL, 'Test Assign'),
-(19, 1, 2, '2017-01-01', '2017-01-02', NULL, 'Test Assign 2', 1, NULL, 'Assign 2'),
-(20, 1, 2, '2017-01-01', '2017-01-02', NULL, 'Test Assign 2', 1, NULL, 'Assign 2'),
-(21, 1, 2, '2017-01-01', '2017-01-02', NULL, 'Test Assign 2', 1, NULL, 'Assign 2'),
-(22, 1, 1, '0000-00-00', '0000-00-00', NULL, '', 1, NULL, '');
+(29, 1, 1, '0000-00-00', '0000-00-00', NULL, 'Tugas Besar', 1, '../upload/assignments/AIF315/admin delete user.PNG', 'Ayo dikerjakan susah loh');
 
 -- --------------------------------------------------------
 
@@ -120,7 +111,8 @@ INSERT INTO `enrollments` (`ID_C`, `ID_U`) VALUES
 (1, 1),
 (1, 2),
 (2, 3),
-(2, 2);
+(2, 2),
+(1, 3);
 
 -- --------------------------------------------------------
 
@@ -149,6 +141,13 @@ CREATE TABLE `submissions` (
   `submitTime` date NOT NULL,
   `fileDirectory` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `submissions`
+--
+
+INSERT INTO `submissions` (`ID_SUB`, `ID_A`, `ID_U`, `submitTime`, `fileDirectory`) VALUES
+(8, 29, 3, '0000-00-00', '../upload/assignments/AIF314/answer/2011730053-Cover.docx/');
 
 -- --------------------------------------------------------
 
@@ -339,7 +338,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `ID_A` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `ID_A` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `acttypes`
@@ -357,7 +356,7 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `submissions`
 --
 ALTER TABLE `submissions`
-  MODIFY `ID_SUB` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_SUB` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `usergroups`
